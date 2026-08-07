@@ -51,6 +51,10 @@
     {
       "decision": "Remove all calculator surfaces and route every primary application CTA directly to the expanded lead form with optional promo code.",
       "reason": "The user explicitly removed cost calculation from the site and selected a larger, wider application-first CTA treatment."
+    },
+    {
+      "decision": "Render the SKL monogram and hero title in dark layered graphite type with a clear vertical gap before the supporting hero copy.",
+      "reason": "The user selected a darker, higher-contrast dimensional title and requested that the lower text group sit farther down."
     }
   ],
   "evidence": [
