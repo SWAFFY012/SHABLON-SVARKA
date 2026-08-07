@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "project": {
+    "name": "skl-welding",
+    "productType": null,
+    "stack": [
+      "react",
+      "vite"
+    ]
+  },
+  "sources": {
+    "tokens": [],
+    "components": [],
+    "assets": [
+      "public/images"
+    ],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "unknown",
+    "colors": {},
+    "typography": {},
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [],
+    "avoid": []
+  },
+  "decisions": [
+    {
+      "decision": "Use a regenerated clean bright workshop photograph with separate DOM typography modeled on the supplied SKL reference.",
+      "reason": "The user requested the bright reference composition together with animated hero text, which requires accessible live typography."
+    },
+    {
+      "decision": "Use 21st Glass Card compound structure and 21st Scroll Reveal motion pattern adapted to native project CSS and motion/react.",
+      "reason": "Preserves Vite architecture while grounding glass and motion in retrieved 21st components."
+    },
+    {
+      "decision": "Use Onest for interface copy, Unbounded for display headings, and a two-row infinite portfolio marquee with hover-revealed captions.",
+      "reason": "Matches the user-selected LANDOS reference while preserving the existing SKL hero composition and orange industrial identity."
+    },
+    {
+      "decision": "Remove all calculator surfaces and route every primary application CTA directly to the expanded lead form with optional promo code.",
+      "reason": "The user explicitly removed cost calculation from the site and selected a larger, wider application-first CTA treatment."
+    }
+  ],
+  "evidence": [
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:vite",
+      "source": "package.json"
+    }
+  ],
+  "generatedAt": "2026-08-07T13:07:21.215Z"
+}
