@@ -57,6 +57,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .mobile-menu { display: none; }
 .hero-content { position: relative; top: -14px; min-height: calc(100dvh - 270px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding-bottom: 54px; }
 .hero-monogram { font: 700 clamp(150px,20vw,340px)/.82 'Oswald', sans-serif; letter-spacing: -.07em; margin-left: -10px; color: #303431; text-shadow: 1px 1px 0 rgba(255,255,255,.58), 4px 5px 0 rgba(18,21,19,.24), 0 20px 38px rgba(20,23,21,.22); }
+.hero-brand-word { font-size: clamp(78px, 11.8vw, 174px); line-height: .9; letter-spacing: -.055em; }
 .hero-content h1 { max-width: 900px; font-family: 'Unbounded', sans-serif; font-size: clamp(32px,3.9vw,61px); line-height: 1.05; letter-spacing: -.012em; margin: 22px 0 12px; color: #242826; text-shadow: 0 1px 0 rgba(255,255,255,.55), 0 7px 18px rgba(18,21,19,.18); }
 .hero-content > p { max-width: 690px; margin: 0; font-size: 17px; line-height: 1.65; letter-spacing: .008em; color: #3f4541; }
 .hero-actions { display: flex; gap: 14px; margin-top: 18px; }
@@ -291,11 +292,12 @@ footer { background: #111312; color: white; border-top: 1px solid rgba(255,255,2
   .header-actions { margin-left: auto; }
   .hero-content { top: 0; min-height: 540px; justify-content: center; padding-top: 55px; padding-bottom: 20px; }
   .hero-monogram { font-size: 38vw; margin-left: -4px; }
+  .hero-brand-word { font-size: clamp(52px, 16.5vw, 92px); line-height: .94; }
   .hero-content h1 { max-width: 350px; font-size: 31px; line-height: 1.12; margin-top: 30px; }
   .hero-content > p { max-width: 310px; font-size: 12px; }
   .hero-actions { width: 100%; display: grid; }
   .hero-actions .button { width: 100%; justify-content: space-between; }
-  .hero-service-strip { position: relative; left: auto; bottom: auto; transform: none; grid-template-columns: 1fr 1fr; gap: 7px; padding-bottom: 16px; }
+  .hero-service-strip { position: relative; left: auto; right: auto; bottom: auto; transform: none; grid-template-columns: 1fr 1fr; gap: 7px; padding-bottom: 16px; }
   .hero-service-card { min-height: 116px; padding: 16px; grid-template-columns: 34px 1fr; }
   .hero-service-card > svg:last-child { display: none; }
   .hero-service-card strong { font-size: 11px; }

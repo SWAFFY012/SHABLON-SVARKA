@@ -55,6 +55,10 @@
     {
       "decision": "Render the SKL monogram and hero title in dark layered graphite type with a clear vertical gap before the supporting hero copy.",
       "reason": "The user selected a darker, higher-contrast dimensional title and requested that the lower text group sit farther down."
+    },
+    {
+      "decision": "Retain the established industrial layout and motion system while rebranding all visible content around HydroSpecInsulation and using the supplied refinery image as the hero.",
+      "reason": "The user explicitly requested a thematic conversion to гидроспецизоляция without changing the site's structure or visual design."
     }
   ],
   "evidence": [
