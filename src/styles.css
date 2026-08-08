@@ -55,10 +55,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .header-apply { min-width: 184px; padding-inline: 22px; font-size: 14px; justify-content: space-between; }
 .menu-button { display: none; width: 44px; height: 44px; place-items: center; background: transparent; color: var(--ink); border: 0; }
 .mobile-menu { display: none; }
-.hero-content { min-height: calc(100dvh - 270px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding-bottom: 54px; }
-.hero-monogram { font: 700 clamp(150px,20vw,340px)/.72 'Oswald', sans-serif; letter-spacing: -.07em; margin-left: -10px; color: #111312; }
-.hero-content h1 { max-width: 900px; font-family: 'Unbounded', sans-serif; font-size: clamp(32px,3.9vw,61px); line-height: 1.05; letter-spacing: -.012em; margin: 12px 0 12px; }
-.hero-content > p { max-width: 690px; margin: 0; font-size: 17px; line-height: 1.65; letter-spacing: .008em; color: #555a56; }
+.hero-content { position: relative; top: -14px; min-height: calc(100dvh - 270px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding-bottom: 54px; }
+.hero-monogram { font: 700 clamp(150px,20vw,340px)/.82 'Oswald', sans-serif; letter-spacing: -.07em; margin-left: -10px; color: #303431; text-shadow: 1px 1px 0 rgba(255,255,255,.58), 4px 5px 0 rgba(18,21,19,.24), 0 20px 38px rgba(20,23,21,.22); }
+.hero-brand-word { max-width: none; font-size: clamp(55px, 7.35vw, 106px); line-height: .92; letter-spacing: -.055em; white-space: nowrap; }
+.hero-content h1 { max-width: 900px; font-family: 'Unbounded', sans-serif; font-size: clamp(32px,3.9vw,61px); line-height: 1.05; letter-spacing: -.012em; margin: 22px 0 12px; color: #242826; text-shadow: 0 1px 0 rgba(255,255,255,.55), 0 7px 18px rgba(18,21,19,.18); }
+.hero-content > p { max-width: 690px; margin: 0; font-size: 17px; line-height: 1.65; letter-spacing: .008em; color: #3f4541; }
 .hero-actions { display: flex; gap: 14px; margin-top: 18px; }
 .hero-actions .button { min-width: 286px; min-height: 76px; padding-inline: 30px; border-radius: 24px; font-size: 17px; justify-content: space-between; }
 .hero-service-strip { position: absolute; left: max(24px, calc((100vw - 1440px)/2)); right: max(24px, calc((100vw - 1440px)/2)); bottom: 20px; z-index: 2; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; }
@@ -258,6 +259,10 @@ footer { background: #111312; color: white; border-top: 1px solid rgba(255,255,2
 .calculator-modal .button { min-height: 58px; }
 .calculator-note { text-align: center; color: var(--muted); }
 
+@media (min-width: 721px) and (min-height: 850px) {
+  .hero-content { top: -40px; }
+}
+
 @media (max-width: 1100px) {
   .site-header { grid-template-columns: 130px 1fr auto; }
   .site-header nav { display: none; }
@@ -285,13 +290,14 @@ footer { background: #111312; color: white; border-top: 1px solid rgba(255,255,2
   .site-header { height: 64px; padding: 0 14px; grid-template-columns: 1fr auto; }
   .site-header .button { display: none; }
   .header-actions { margin-left: auto; }
-  .hero-content { min-height: 540px; justify-content: center; padding-top: 55px; padding-bottom: 20px; }
+  .hero-content { top: 0; min-height: 540px; justify-content: center; padding-top: 55px; padding-bottom: 20px; }
   .hero-monogram { font-size: 38vw; margin-left: -4px; }
+  .hero-brand-word { font-size: clamp(27px, 8vw, 38px); line-height: 1; letter-spacing: -.04em; }
   .hero-content h1 { max-width: 350px; font-size: 31px; line-height: 1.12; margin-top: 30px; }
   .hero-content > p { max-width: 310px; font-size: 12px; }
   .hero-actions { width: 100%; display: grid; }
   .hero-actions .button { width: 100%; justify-content: space-between; }
-  .hero-service-strip { position: relative; left: auto; bottom: auto; transform: none; grid-template-columns: 1fr 1fr; gap: 7px; padding-bottom: 16px; }
+  .hero-service-strip { position: relative; left: auto; right: auto; bottom: auto; transform: none; grid-template-columns: 1fr 1fr; gap: 7px; padding-bottom: 16px; }
   .hero-service-card { min-height: 116px; padding: 16px; grid-template-columns: 34px 1fr; }
   .hero-service-card > svg:last-child { display: none; }
   .hero-service-card strong { font-size: 11px; }

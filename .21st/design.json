@@ -51,6 +51,18 @@
     {
       "decision": "Remove all calculator surfaces and route every primary application CTA directly to the expanded lead form with optional promo code.",
       "reason": "The user explicitly removed cost calculation from the site and selected a larger, wider application-first CTA treatment."
+    },
+    {
+      "decision": "Render the SKL monogram and hero title in dark layered graphite type with a clear vertical gap before the supporting hero copy.",
+      "reason": "The user selected a darker, higher-contrast dimensional title and requested that the lower text group sit farther down."
+    },
+    {
+      "decision": "Retain the established industrial layout and motion system while rebranding all visible content around HydroSpecInsulation and using the supplied refinery image as the hero.",
+      "reason": "The user explicitly requested a thematic conversion to гидроспецизоляция without changing the site's structure or visual design."
+    },
+    {
+      "decision": "Use the complete word ГИДРОСПЕЦИЗОЛЯЦИЯ as the dimensional hero display mark and reserve eight unique process photographs exclusively for services and portfolio cases.",
+      "reason": "The user requested the full name to fit in the gray dimensional title and prohibited reuse of the hero photograph inside the work carousel."
     }
   ],
   "evidence": [
