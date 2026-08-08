@@ -15,33 +15,33 @@ const services = [
     title: 'Гидроизоляция объектов',
     text: 'Защита фундаментов, кровель, резервуаров и подземных конструкций от воды и протечек.',
     tags: ['Фундаменты', 'Кровли', 'Резервуары'],
-    image: '/images/hero-hydrospec.png',
+    image: '/images/portfolio-hydro/01-foundation-membrane.png',
   },
   {
     icon: Factory,
     title: 'Антикоррозионная защита',
     text: 'Подготовка и защитная обработка металлоконструкций, трубопроводов и промышленного оборудования.',
     tags: ['Металл', 'Трубопроводы', 'Покрытия'],
-    image: '/images/project-gate.png',
+    image: '/images/portfolio-hydro/06-pipe-anticorrosion.png',
   },
   {
     icon: HardHat,
     title: 'Промышленная теплоизоляция',
     text: 'Изоляция трубопроводов, ёмкостей и инженерных систем с защитным покровным слоем.',
     tags: ['Оборудование', 'Трассы', 'Ёмкости'],
-    image: '/images/project-stairs.png',
+    image: '/images/portfolio-hydro/02-pipe-insulation.png',
   },
 ]
 
 const projects = [
-  { id: 1, category: 'Гидроизоляция', title: 'Фундамент объекта', task: 'Мембрана и герметизация узлов', image: '/images/portfolio-4k/01-sliding-gate.jpg' },
-  { id: 2, category: 'Теплоизоляция', title: 'Трубопровод цеха', task: 'Минеральная вата и покровный слой', image: '/images/portfolio-4k/02-loft-table.jpg' },
-  { id: 3, category: 'Кровля', title: 'Промышленная кровля', task: 'Ремонт примыканий и защита от протечек', image: '/images/portfolio-4k/03-metal-roof.jpg' },
-  { id: 4, category: 'Антикор', title: 'Несущие конструкции', task: 'Очистка поверхности и защитное покрытие', image: '/images/portfolio-4k/04-steel-staircase.jpg' },
-  { id: 5, category: 'Промышленность', title: 'Защита резервуара', task: 'Гидроизоляция по технологической карте', image: '/images/hero-hydrospec.png' },
-  { id: 6, category: 'Гидроизоляция', title: 'Деформационные швы', task: 'Герметизация и контроль примыканий', image: '/images/project-stairs.png' },
-  { id: 7, category: 'Антикор', title: 'Металлический трубопровод', task: 'Подготовка и окраска под ключ', image: '/images/project-gate.png' },
-  { id: 8, category: 'Кровля', title: 'Герметизация узлов', task: 'Локальный ремонт без остановки объекта', image: '/images/hero-hydrospec.png' },
+  { id: 1, category: 'Гидроизоляция', title: 'Фундамент объекта', task: 'Мембрана и герметизация узлов', image: '/images/portfolio-hydro/01-foundation-membrane.png' },
+  { id: 2, category: 'Теплоизоляция', title: 'Трубопровод цеха', task: 'Минеральная вата и покровный слой', image: '/images/portfolio-hydro/02-pipe-insulation.png' },
+  { id: 3, category: 'Инъектирование', title: 'Деформационный шов', task: 'Инъекционная гидроизоляция бетона', image: '/images/portfolio-hydro/03-joint-injection.png' },
+  { id: 4, category: 'Резервуары', title: 'Защитное покрытие', task: 'Полимерная система по бетону', image: '/images/portfolio-hydro/04-reservoir-coating.png' },
+  { id: 5, category: 'Кровля', title: 'Промышленная мембрана', task: 'Сварка полотен и герметизация узлов', image: '/images/portfolio-hydro/05-roof-membrane.png' },
+  { id: 6, category: 'Антикор', title: 'Технологический трубопровод', task: 'Подготовка и защитная окраска', image: '/images/portfolio-hydro/06-pipe-anticorrosion.png' },
+  { id: 7, category: 'Подземные сооружения', title: 'Инженерный тоннель', task: 'Мембрана, бентонит и проходки', image: '/images/portfolio-hydro/07-underground-waterproofing.png' },
+  { id: 8, category: 'Герметизация', title: 'Проходки коммуникаций', task: 'Эластичные манжеты и контроль влажности', image: '/images/portfolio-hydro/08-pipe-penetrations.png' },
 ]
 
 const navLinks = [
@@ -110,11 +110,11 @@ function Hero() {
   ]
   return (
     <section className="hero-light" id="top">
-      <img src="/images/hero-hydrospec.png" className="hero-light-image" alt="Специалист осматривает промышленный объект" />
+      <img src="/images/hero-hydrospec-v2.png" className="hero-light-image" alt="Инженер осматривает промышленный нефтехимический комплекс" />
       <Header />
       <motion.div className="hero-content shell" variants={parent} initial="hidden" animate="visible">
-        <motion.div className="hero-monogram hero-brand-word" variants={child}>ГИДРОСПЕЦ</motion.div>
-        <motion.h1 variants={child}>ИЗОЛЯЦИЯ<br />ПОД КЛЮЧ</motion.h1>
+        <motion.div className="hero-monogram hero-brand-word" variants={child}>ГИДРОСПЕЦИЗОЛЯЦИЯ</motion.div>
+        <motion.h1 variants={child}>ПРОМЫШЛЕННАЯ<br />ЗАЩИТА ПОД КЛЮЧ</motion.h1>
         <motion.p variants={child}>Гидроизоляция, антикоррозионная защита и теплоизоляция промышленных объектов. Работаем по договору, выезжаем на обследование бесплатно.</motion.p>
         <motion.div className="hero-actions" variants={child}>
           <a className="button button-accent" href="#portfolio">Смотреть работы <ArrowRight size={18} /></a>
